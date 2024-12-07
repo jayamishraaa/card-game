@@ -15,7 +15,7 @@ const Card: React.FC<Props> = ({ card, callback }) => {
   };
 
   return (
-    <Wrapper onClick={handleClick} className='h-50 lg:w-36'>
+    <Wrapper onClick={handleClick} className='h-40 lg:w-30 shadow-slate-800 shadow-lg'>
       <FrontImg flipped={card.flipped} src={card.frontImage} alt='card-front' />
       <BackImg flipped={card.flipped} src={card.backImage} alt='card-back' />
     </Wrapper>

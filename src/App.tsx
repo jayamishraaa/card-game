@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './components/Card';
+import bg from '../src/assets/bg.gif'
 // Setup
 import { createBoard } from './setup';
 // import { shuffleArray } from './utils';
@@ -66,7 +67,7 @@ const App = () => {
   };
 
   return (
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center h-screen items-center'>
       <div className='grid grid-cols-6 gap-2 '>
         {cards.map(card => (
           <Card key={card.id} card={card} callback={handleCardClick} />
